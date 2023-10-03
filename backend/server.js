@@ -11,7 +11,6 @@ const PORT = 4000;
 connectDB();
 
 // Initialize Apollo Server
-let x;
 async function startServer() {
   const server = new ApolloServer({
     typeDefs,
