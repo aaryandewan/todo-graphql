@@ -13,7 +13,7 @@ const TodoList = () => {
     <div>
       <h2>Your Todos:</h2>
       <ul>
-        {data.todos.map((todo) => (
+        {data && data.getTodos.map((todo) => (
           <TodoItem key={todo.id} todo={todo} />
         ))}
       </ul>

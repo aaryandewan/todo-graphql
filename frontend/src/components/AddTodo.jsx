@@ -8,7 +8,7 @@ const AddTodo = () => {
 
   const [addTodo] = useMutation(ADD_TODO, {
     refetchQueries: ["GetTodos"], // Refresh the list after adding
-  });
+  }); //?
 
   const handleSubmit = async (e) => {
     e.preventDefault();
